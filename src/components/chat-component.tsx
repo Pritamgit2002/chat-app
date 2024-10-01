@@ -107,7 +107,7 @@ export const ChatComponent: React.FC = () => {
                     />
                     <div className=" w-full h-full flex flex-col items-start justify-start gap-1">
                       <div className=" w-full flex items-center justify-between pr-1">
-                        <h2 className="text-base font-semibold text-[#000929] tracking-tight line-clamp-1">
+                        <h2 className=" select-none text-base font-semibold text-[#000929] tracking-tight line-clamp-1">
                           {removePrefix(session.name)}
                         </h2>
                         <span className="text-xs">
@@ -158,7 +158,15 @@ export const ChatComponent: React.FC = () => {
           isSetChatContainerRef={ischatContainerRef}
         />
       ) : (
-        <div className="w-8/12 h-full flex flex-col bg-[#F7F7FD]"></div>
+        <div className="w-8/12 h-full flex flex-col items-center justify-center bg-[#F7F7FD]">
+          <Image
+            src="/chat.svg"
+            alt="Profile"
+            width={1000}
+            height={1000}
+            className=" w-72 h-72 object-contain cursor-pointer"
+          />
+        </div>
       )}
     </div>
   );
