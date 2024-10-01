@@ -59,7 +59,7 @@ export const ChatComponent: React.FC = () => {
     return <div>Error: {error}</div>;
   }
   return (
-    <div className={`overflow-hidden w-full sm:w-[1280px] h-full sm:h-[890px] sm:flex items-center justify-center border-2 border-red-500  `}>
+    <div className={` rounded-xl overflow-hidden w-full sm:w-[1280px] h-full sm:h-[890px] sm:flex items-center justify-center `}>
       {/* Chat sessions list */}
       <div
         className={`${
@@ -67,7 +67,7 @@ export const ChatComponent: React.FC = () => {
         } w-[100%] sm:w-2/5 md:w-5/12 lg:w-4/12 h-full flex flex-col`}
       >
         <div
-          className=" tracking-tight h-20 p-4 bg-[#F7F7FD] text-2xl font-semibold shadow-lg shadow-gray-400/80 z-10"
+          className=" tracking-tight h-20 pt-4 px-4 bg-[#F7F7FD] text-2xl font-semibold shadow-lg shadow-gray-400/80 z-10"
           style={interFont.style}
         >
           Chat Sessions Dashboard
