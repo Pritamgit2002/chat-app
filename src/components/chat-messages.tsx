@@ -25,8 +25,8 @@ export const ChatMessages = (props: Props) => {
       className={`${
         props.isSetChatContainerRef
           ? "w-full flex flex-col" // Show full width on mobile if true
-          : "" // Show normal size on large screens, hidden on mobile
-      }w-3/5 md:w-8/12 hidden sm:flex flex-col h-full bg-[#F7F7FD]`}
+          : "" 
+      }w-3/5 md:w-8/12 flex flex-col h-full bg-[#F7F7FD]`}
     >
       {/* Static Banner */}
       <div className="w-full bg-gray-100 flex items-center justify-start gap-x-3 p-3 sm:p-4 z-10 shadow-md cursor-default">
